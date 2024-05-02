@@ -1,0 +1,17 @@
+﻿ku ByUEditorDemo
+{
+    system biao identity.dialog.method "身份窗体方法表" (
+    string belong "所属类型"
+    , string name "名称"
+    , string[] scenes "场景"
+    , string[] modifiers "修饰符"
+    , string[] parameters "参数"
+    , string returnType "返回类型"
+    , string body "方法体")
+    {
+        { Home.test_dlg, test_dlg, , {  }, {  }, , {
+           var tmpUEdit = new ByUEditor.object.UEditor(true);
+           this.element.children[0].append( tmpUEdit.element );
+        } }
+    }
+}

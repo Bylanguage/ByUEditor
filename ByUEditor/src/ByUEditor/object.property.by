@@ -1,0 +1,18 @@
+﻿ku ByUEditor
+{
+    system biao object.property "面向对象属性表" (
+    string belong "所属类型"
+    , string name "名称"
+    , string[] scenes "场景"
+    , string[] modifiers "修饰符"
+    , string type "类型"
+    , OBJECT value "值")
+    {
+        { UEditor, element, { web }, { readonly }, WebElement,  }
+        { UEditor, height, { web }, {  }, int,  }
+        { UEditor, width, { web }, {  }, int,  }
+        { UEditor, text, { web }, {  }, string,  }
+        { UEditor, htmlContent, { web }, {  }, string,  }
+        { UEditor, readOnly, { web }, {  }, bool,  }
+    }
+}
